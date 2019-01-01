@@ -1,0 +1,64 @@
+EESchema Schematic File Version 4
+LIBS:MCT19-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266:NodeMCU1.0(ESP-12E) U3
+U 1 1 5C251A80
+P 5800 3700
+F 0 "U3" H 5800 4787 60  0000 C CNN
+F 1 "NodeMCU1.0(ESP-12E)" H 5800 4681 60  0000 C CNN
+F 2 "" H 5200 2850 60  0001 C CNN
+F 3 "" H 5200 2850 60  0000 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5C251AC5
+P 4900 4400
+F 0 "#PWR017" H 4900 4250 50  0001 C CNN
+F 1 "+5V" V 4915 4528 50  0000 L CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 4400 5000 4400
+$Comp
+L power:GNDA #PWR016
+U 1 1 5C251B38
+P 4500 4400
+F 0 "#PWR016" H 4500 4150 50  0001 C CNN
+F 1 "GNDA" H 4505 4227 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "" H 4500 4400 50  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4400 4500 4300
+Wire Wire Line
+	4500 4300 5000 4300
+Text HLabel 4650 3000 0    50   Output ~ 0
+A0
+Wire Wire Line
+	4650 3000 5000 3000
+Text HLabel 6800 3100 2    50   Output ~ 0
+PWM
+Wire Wire Line
+	6600 3100 6800 3100
+$EndSCHEMATC

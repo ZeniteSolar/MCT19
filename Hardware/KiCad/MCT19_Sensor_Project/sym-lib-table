@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ESP8266)(type Legacy)(uri C:/Users/Dell/Documents/Patitita/Estagio/Hardware/KiCad/Libraries/Schematic/ESP8266.lib)(options "")(descr ""))
+)

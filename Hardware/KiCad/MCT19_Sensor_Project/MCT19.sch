@@ -1,0 +1,480 @@
+EESchema Schematic File Version 4
+LIBS:MCT19-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2750 1900 1200 900 
+U 5C23CB98
+F0 "Fonte" 50
+F1 "Fonte.sch" 50
+F2 "GND" O R 3950 2700 50 
+F3 "GNDA" O R 3950 2550 50 
+F4 "+5V" O R 3950 2050 50 
+F5 "Vin-" O L 2750 2400 50 
+F6 "Vin+" O L 2750 2300 50 
+F7 "Vcc" O R 3950 2200 50 
+$EndSheet
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5C251519
+P 1750 2400
+F 0 "J2" H 1670 2617 50  0000 C CNN
+F 1 "Vin" H 1670 2526 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1750 2400 50  0001 C CNN
+F 3 "~" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5C25169F
+P 4200 1900
+F 0 "#PWR08" H 4200 1750 50  0001 C CNN
+F 1 "+5V" H 4215 2073 50  0000 C CNN
+F 2 "" H 4200 1900 50  0001 C CNN
+F 3 "" H 4200 1900 50  0001 C CNN
+	1    4200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2050 4200 2050
+Wire Wire Line
+	4200 2050 4200 1900
+$Comp
+L power:GNDA #PWR09
+U 1 1 5C251708
+P 4300 2850
+F 0 "#PWR09" H 4300 2600 50  0001 C CNN
+F 1 "GNDA" H 4305 2677 50  0000 C CNN
+F 2 "" H 4300 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2550 4300 2550
+Wire Wire Line
+	4300 2550 4300 2850
+$Comp
+L power:GND #PWR07
+U 1 1 5C251791
+P 4050 2850
+F 0 "#PWR07" H 4050 2600 50  0001 C CNN
+F 1 "GND" H 4055 2677 50  0000 C CNN
+F 2 "" H 4050 2850 50  0001 C CNN
+F 3 "" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2700 4050 2700
+Wire Wire Line
+	4050 2700 4050 2850
+$Sheet
+S 2750 3550 1250 800 
+U 5C251837
+F0 "Sinais" 50
+F1 "Sinais.sch" 50
+F2 "SignalIn" I L 2750 3950 50 
+F3 "GNDA" I L 2750 4250 50 
+F4 "SignalOut" I R 4000 3950 50 
+F5 "+5V" I L 2750 3650 50 
+$EndSheet
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5C2518A9
+P 1650 3950
+F 0 "J1" H 1570 4267 50  0000 C CNN
+F 1 "Sensor" H 1570 4176 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1650 3950 50  0001 C CNN
+F 3 "~" H 1650 3950 50  0001 C CNN
+	1    1650 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5C259672
+P 1950 3950
+F 0 "C8" H 2042 3996 50  0000 L CNN
+F 1 "100n" H 2042 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1950 3950 50  0001 C CNN
+F 3 "~" H 1950 3950 50  0001 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3850 1850 3850
+Wire Wire Line
+	1950 4050 1850 4050
+$Comp
+L power:GNDA #PWR020
+U 1 1 5C2599E8
+P 2600 4500
+F 0 "#PWR020" H 2600 4250 50  0001 C CNN
+F 1 "GNDA" H 2605 4327 50  0000 C CNN
+F 2 "" H 2600 4500 50  0001 C CNN
+F 3 "" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4500 2600 4350
+Wire Wire Line
+	2600 4350 2750 4350
+$Comp
+L power:GNDA #PWR019
+U 1 1 5C259BFE
+P 1950 4450
+F 0 "#PWR019" H 1950 4200 50  0001 C CNN
+F 1 "GNDA" H 1955 4277 50  0000 C CNN
+F 2 "" H 1950 4450 50  0001 C CNN
+F 3 "" H 1950 4450 50  0001 C CNN
+	1    1950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4450 1950 4250
+Connection ~ 1950 4050
+$Comp
+L power:+5V #PWR018
+U 1 1 5C259E44
+P 1950 3550
+F 0 "#PWR018" H 1950 3400 50  0001 C CNN
+F 1 "+5V" H 1965 3723 50  0000 C CNN
+F 2 "" H 1950 3550 50  0001 C CNN
+F 3 "" H 1950 3550 50  0001 C CNN
+	1    1950 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 3850
+$Comp
+L power:+5V #PWR021
+U 1 1 5C25A0C0
+P 2650 3500
+F 0 "#PWR021" H 2650 3350 50  0001 C CNN
+F 1 "+5V" H 2665 3673 50  0000 C CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3500 2650 3650
+Wire Wire Line
+	2650 3650 2750 3650
+$Comp
+L power:VCC #PWR024
+U 1 1 5C26595C
+P 4550 1900
+F 0 "#PWR024" H 4550 1750 50  0001 C CNN
+F 1 "VCC" H 4567 2073 50  0000 C CNN
+F 2 "" H 4550 1900 50  0001 C CNN
+F 3 "" H 4550 1900 50  0001 C CNN
+	1    4550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1900 4550 2200
+Wire Wire Line
+	4550 2200 3950 2200
+$Comp
+L power:GND #PWR025
+U 1 1 5C2660EB
+P 7450 3600
+F 0 "#PWR025" H 7450 3350 50  0001 C CNN
+F 1 "GND" H 7455 3427 50  0000 C CNN
+F 2 "" H 7450 3600 50  0001 C CNN
+F 3 "" H 7450 3600 50  0001 C CNN
+	1    7450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5C267654
+P 8850 3100
+F 0 "J3" H 8769 2775 50  0000 C CNN
+F 1 "Fan" H 8769 2866 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8850 3100 50  0001 C CNN
+F 3 "~" H 8850 3100 50  0001 C CNN
+	1    8850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5C27AA64
+P 8100 3600
+F 0 "Q1" V 8443 3600 50  0000 C CNN
+F 1 "Irf530" V 8352 3600 50  0000 C CNN
+F 2 "KicadZeniteSolarLibrary18:TO-220-3_Horizontal_TabDown_SMD" H 8300 3700 50  0001 C CNN
+F 3 "~" H 8100 3600 50  0001 C CNN
+	1    8100 3600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7450 3500 7900 3500
+Wire Wire Line
+	7450 3500 7450 3600
+$Comp
+L Device:D_Small D2
+U 1 1 5C27C129
+P 8550 3150
+F 0 "D2" V 8500 3000 50  0000 L CNN
+F 1 "LL4148" V 8600 2800 50  0000 L CNN
+F 2 "Diode_SMD:D_MiniMELF_Handsoldering" V 8550 3150 50  0001 C CNN
+F 3 "~" V 8550 3150 50  0001 C CNN
+	1    8550 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5C2803E8
+P 7550 3150
+F 0 "C9" H 7642 3196 50  0000 L CNN
+F 1 "1u" H 7642 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7550 3150 50  0001 C CNN
+F 3 "~" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR027
+U 1 1 5C280A09
+P 7450 2750
+F 0 "#PWR027" H 7450 2600 50  0001 C CNN
+F 1 "VCC" H 7467 2923 50  0000 C CNN
+F 2 "" H 7450 2750 50  0001 C CNN
+F 3 "" H 7450 2750 50  0001 C CNN
+	1    7450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2850 8650 3050
+Wire Wire Line
+	8650 3200 8650 3250
+Wire Wire Line
+	8300 3500 8650 3500
+Wire Wire Line
+	8550 3250 8650 3250
+Connection ~ 8650 3250
+Wire Wire Line
+	8550 3050 8650 3050
+Connection ~ 8650 3050
+Wire Wire Line
+	8650 3050 8650 3100
+Wire Wire Line
+	8650 2850 7450 2850
+Wire Wire Line
+	7450 2850 7450 2750
+$Comp
+L Device:C_Small C10
+U 1 1 5C288EC7
+P 7350 3150
+F 0 "C10" H 7442 3196 50  0000 L CNN
+F 1 "1u" H 7442 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7350 3150 50  0001 C CNN
+F 3 "~" H 7350 3150 50  0001 C CNN
+	1    7350 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3050 7450 3050
+Wire Wire Line
+	7350 3250 7450 3250
+Wire Wire Line
+	7450 3050 7450 2850
+Connection ~ 7450 3050
+Wire Wire Line
+	7450 3050 7550 3050
+Connection ~ 7450 2850
+Wire Wire Line
+	7450 3250 7450 3500
+Connection ~ 7450 3250
+Wire Wire Line
+	7450 3250 7550 3250
+Connection ~ 7450 3500
+$Comp
+L ESP8266:NodeMCU1.0(ESP-12E) U?
+U 1 1 5C28BD22
+P 5850 4650
+AR Path="/5C251848/5C28BD22" Ref="U?"  Part="1" 
+AR Path="/5C28BD22" Ref="U3"  Part="1" 
+F 0 "U3" H 5850 5737 60  0000 C CNN
+F 1 "NodeMCU1.0(ESP-12E)" H 5850 5631 60  0000 C CNN
+F 2 "KicadZeniteSolarLibrary18:NodeMCU-LoLinV3" H 5250 3800 60  0001 C CNN
+F 3 "" H 5250 3800 60  0000 C CNN
+	1    5850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C28BD29
+P 4950 5350
+AR Path="/5C251848/5C28BD29" Ref="#PWR?"  Part="1" 
+AR Path="/5C28BD29" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 4950 5200 50  0001 C CNN
+F 1 "+5V" V 4965 5478 50  0000 L CNN
+F 2 "" H 4950 5350 50  0001 C CNN
+F 3 "" H 4950 5350 50  0001 C CNN
+	1    4950 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 5350 5050 5350
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C28BD30
+P 4550 5350
+AR Path="/5C251848/5C28BD30" Ref="#PWR?"  Part="1" 
+AR Path="/5C28BD30" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 4550 5100 50  0001 C CNN
+F 1 "GNDA" H 4555 5177 50  0000 C CNN
+F 2 "" H 4550 5350 50  0001 C CNN
+F 3 "" H 4550 5350 50  0001 C CNN
+	1    4550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5350 4550 5250
+Wire Wire Line
+	4550 5250 5050 5250
+Text Label 7000 4050 2    50   ~ 0
+PWM
+Wire Wire Line
+	4000 3950 5050 3950
+NoConn ~ 5050 4050
+NoConn ~ 5050 4150
+NoConn ~ 5050 4250
+NoConn ~ 5050 4350
+NoConn ~ 5050 4450
+NoConn ~ 5050 4550
+NoConn ~ 5050 4650
+NoConn ~ 5050 4750
+NoConn ~ 5050 4850
+NoConn ~ 5050 4950
+NoConn ~ 5050 5050
+NoConn ~ 5050 5150
+NoConn ~ 6650 4150
+NoConn ~ 6650 3950
+NoConn ~ 6650 4250
+NoConn ~ 6650 4350
+NoConn ~ 6650 4450
+NoConn ~ 6650 4550
+NoConn ~ 6650 4650
+NoConn ~ 6650 4750
+NoConn ~ 6650 4850
+NoConn ~ 6650 4950
+NoConn ~ 6650 5050
+NoConn ~ 6650 5150
+NoConn ~ 6650 5250
+NoConn ~ 6650 5350
+Wire Wire Line
+	8100 3800 8100 4050
+Wire Wire Line
+	6650 4050 8100 4050
+Wire Wire Line
+	1950 2300 2750 2300
+Wire Wire Line
+	1950 2400 2750 2400
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C2AD090
+P 4850 1900
+F 0 "#FLG0101" H 4850 1975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 2074 50  0000 C CNN
+F 2 "" H 4850 1900 50  0001 C CNN
+F 3 "~" H 4850 1900 50  0001 C CNN
+	1    4850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1900 4850 2200
+Wire Wire Line
+	4850 2200 4550 2200
+Connection ~ 4550 2200
+$Comp
+L Sensor_Temperature:LM35-LP U4
+U 1 1 5C2A487A
+P 1100 3950
+F 0 "U4" H 770 3996 50  0000 R CNN
+F 1 "LM35-LP" H 770 3905 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 1150 3700 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm35.pdf" H 1100 3950 50  0001 C CNN
+	1    1100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3950 1850 3950
+Connection ~ 1850 3950
+Wire Wire Line
+	1850 3950 2750 3950
+Wire Wire Line
+	1100 3650 1950 3650
+Wire Wire Line
+	1950 3550 1950 3650
+Connection ~ 1950 3650
+Wire Wire Line
+	1950 3650 1950 3850
+Wire Wire Line
+	1100 4250 1950 4250
+Connection ~ 1950 4250
+Wire Wire Line
+	1950 4250 1950 4050
+Wire Wire Line
+	8650 3250 8650 3500
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C2B1BD6
+P 1500 5150
+F 0 "H1" H 1600 5196 50  0000 L CNN
+F 1 "MountingHole" H 1600 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C2B1C5F
+P 1500 5400
+F 0 "H2" H 1600 5446 50  0000 L CNN
+F 1 "MountingHole" H 1600 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1500 5400 50  0001 C CNN
+F 3 "~" H 1500 5400 50  0001 C CNN
+	1    1500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C2B1C8D
+P 1500 5650
+F 0 "H3" H 1600 5696 50  0000 L CNN
+F 1 "MountingHole" H 1600 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1500 5650 50  0001 C CNN
+F 3 "~" H 1500 5650 50  0001 C CNN
+	1    1500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C2B1CBD
+P 1500 5900
+F 0 "H4" H 1600 5946 50  0000 L CNN
+F 1 "MountingHole" H 1600 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1500 5900 50  0001 C CNN
+F 3 "~" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
